@@ -1,0 +1,94 @@
+/*
+   Fonts
+*/
+/* Latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* Latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v12/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/*
+    Iranian Font
+*/
+
+@font-face {
+    src: url('../../fonts/Iranian Sans.ttf');
+    font-family: 'isans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*
+    Styles
+*/
+
+/*
+    For Steps
+*/
+
+.first{
+    width:1200px;
+    height:200px;
+}
+
+/*
+    For Text
+*/
+*{
+    font-family:isans,Raleway;
+    font-size:20px;
+    color:#2c3e50;
+}
+body{
+    background-color: whitesmoke;
+}
+.step{
+    direction: rtl!important;
+    text-align: right;
+    width: 900px;
+    display: table;
+    filter:blur(10px);
+    transition-duration: 0.5s;
+}
+.step.active{
+    filter:blur(0px)!important;
+}
+.center{
+    width:100%;
+    display: block;
+    text-align: center;
+}
+.big{
+    font-size:50px!important;
+    text-shadow:0px 0px 2px #2C3E50;
+}
+.head{
+    font-size:26px!important;
+}
+.important{
+    color:#e74c3c!important;
+    text-shadow:0px 0px 2px #e74c3c;
+}
+.effective{
+    color:#2980b9!important;
+    text-shadow:0px 0px 2px #2980b9;
+}
+.bold{
+    font-weight:600;
+}
+ul>li{
+    height: 40px;
+    line-height: 40px;
+    list-style-type: disc;
+}
