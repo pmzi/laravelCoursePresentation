@@ -93,8 +93,24 @@ body{
 .ltr{
     direction: ltr;
     display: inline-block;
+    text-align: left;
+}
+.ltrBlock{
+    direction: ltr;
+    text-align: left;
 }
 ul>li{
     line-height: 40px;
     list-style-type: disc;
+}
+code{
+    width: 100%;
+    display: block;
+    direction: ltr;
+    text-align: left;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    white-space: pre;
+    margin-bottom: 5px;
 }

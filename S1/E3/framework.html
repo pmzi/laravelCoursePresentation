@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- CSS -->
+
+    <link href="../../assets/css/individuals/parent.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Let's Roll! -->
+    <div id="root">
+        <div id="intro" class="step first">
+            <h1 class="center big">
+                بررسی ساختار آدرس دهی و فولدربندی فریم‌ورک
+            </h1>
+            <div class="center">
+                <span class="effective">مدرس: </span>
+                <span>پویا مظفرمقام</span>
+            </div>
+            <div class="center">
+                <span class="effective">Otedia.com</span>
+            </div>
+        </div>
+
+        <div class="step" id="URL1" data-y="1000">
+            <h1 class="head">
+                ساختار آدرس دهی
+            </h1>
+            <p>
+                <code>
+                    http://site.com/[Controller Name]/[Method name]/[argument 1]/[argument 2]/...
+                </code>
+            </p>
+        </div>
+        <div class="step" id="URL2" data-y="1000" data-x="1500" data-rotate-y="-45">
+            
+            <p>
+                <code>
+http://site.com/posts/show/1
+                </code>
+            </p>
+
+            <p>
+                <code>
+class Posts{
+    public function show($id){
+        // Do stuffs
+    }
+}
+                </code>
+            </p>
+        </div>
+        <div class="step" id="URL4" data-y="2000" data-x="1500" data-rotate-y="-45">
+            
+            <p>
+                <div class="effective ltrBlock">.htaccess</div>
+                <code>
+Options -MultiViews
+ReWriteEngine On
+                        
+RewriteBase /
+                        
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+                        
+RewriteRule (.+)$ index.php?url=$1 [QSA,L]
+                </code>
+            </p>
+            <p>
+                <code>
+http://site.com/posts/show/1
+                </code>
+            </p>
+            <p>
+                <code>
+index.php?url=posts/show/1
+                </code>
+            </p>
+        </div>
+    </div>
+    <!-- Scripts -->
+
+    <script src="../../assets/js/individuals/S1/E1/script.js"></script>
+
+    <script src="../../assets/js/plugins/impress.js"></script>
+
+</body>
+
+</html>

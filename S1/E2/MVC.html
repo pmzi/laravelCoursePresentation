@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,97 +10,110 @@
     <link href="../../assets/css/individuals/parent.css" rel="stylesheet" />
 
 </head>
+
 <body>
 
-<!-- Let's Roll! -->
-<div id="root">
-    <div id="intro" class="step first">
-        <h1 class="center big">
-معرفی و بررسی معماری MVC
-        </h1>
-        <div class="center">
-            <span class="effective">مدرس: </span><span>پویا مظفرمقام</span>
-        </div>
-    </div>
-
-    <div class="step" id="whatIsMVC" data-y="1000">
-        <h1 class="head">
-            معرفی MVC
-        </h1>
-        <p>
-            معماری <span class="ltr">MVC(Model-View-Controller)</span>، نوعی معماری نرم افزاری است که برپایه ی جداسازی منطق برنامه از نمایش آن می باشد.
-        </p>
-    </div>
-
-    <div id="whatIsMvc-2" class="step" data-x="1000" data-y="500" data-z="500">
-        <h1 class="head">
-            معرفی MVC
-        </h1>
-        <span>
-            این معماری از 3 بخش <span class="effective">Model</span>، <span class="effective">View</span> و <span class="effective">Controller</span> تشکلیل شده است که به توضیح آنان می پردازیم:
-        </span>
-        <ul>
-            <li>
-                <span class="effective">Model:</span>
-این بخش وظیفه ارتباط با پایگاه داده و انجام عملیات برروی پایگاه داده را دارد. بطور کلی بار اصلی
-                معماری MVC روی این بخش می باشد.
-            </li>
-            <li>
-                <span class="effective">View:</span>
-این بخش وظیفه نمایش نتیجه ی دو قسمت دیگر<span class="ltr">(Model & Controller)</span> را داد. درواقع این بخش، بخش انتهایی
-                و نهایی برنامه می باشد که خروجی را به کاربر نمایش می دهد.
-            </li>
-            <li>
-                <span class="effective">Controller:</span>
-                این بخش، بخشی است که درخواست های کاربر به آن ارجاع داده می شود و با توجه به درخواست کاربر، اطلاعات را از طریق Model می گیرد
-                 و پردازش های لازم را انجام می دهد و از طریق View نتیجه ی این پردازش ها را به کاربر نمایش می دهد.
-                 بخش منطق برنامه به عهده این قسمت می باشد.
-            </li>
-        </ul>
-    </div>
-
-    <div class="step" data-x="2000" data-z="1000" data-rotate-y="-45">
-
-        <div class="center">
-            <img src="MVC-Process.png" />
+    <!-- Let's Roll! -->
+    <div id="root">
+        <div id="intro" class="step first">
+            <h1 class="center big">
+                معرفی و بررسی معماری MVC
+            </h1>
+            <div class="center">
+                <span class="effective">مدرس: </span>
+                <span>پویا مظفرمقام</span>
+            </div>
+            <div class="center">
+                <span class="effective">Otedia.com</span>
+            </div>
         </div>
 
+        <div class="step" id="whatIsMVC" data-y="1000">
+            <h1 class="head">
+                معرفی MVC
+            </h1>
+            <p>
+                معماری
+                <span class="ltr">MVC(Model-View-Controller)</span>، نوعی معماری نرم افزاری است که برپایه ی جداسازی منطق برنامه از نمایش آن
+                می باشد.
+            </p>
+        </div>
+
+        <div id="whatIsMvc-2" class="step" data-x="1000" data-y="500" data-z="500">
+            <h1 class="head">
+                معرفی MVC
+            </h1>
+            <span>
+                این معماری از 3 بخش
+                <span class="effective">Model</span>،
+                <span class="effective">View</span> و
+                <span class="effective">Controller</span> تشکلیل شده است که به توضیح آنان می پردازیم:
+            </span>
+            <ul>
+                <li>
+                    <span class="effective">Controller:</span>
+                    این بخش، بخشی است که درخواست های کاربر به آن ارجاع داده می شود و با توجه به درخواست کاربر، اطلاعات را از طریق Model می گیرد
+                    و پردازش های لازم را انجام می دهد و از طریق View نتیجه ی این پردازش ها را به کاربر نمایش می دهد. بخش
+                    منطق برنامه به عهده این قسمت می باشد.
+                </li>
+                <li>
+                    <span class="effective">Model:</span>
+                    این بخش وظیفه ارتباط با پایگاه داده و انجام عملیات برروی پایگاه داده را دارد. بطور کلی بار اصلی معماری MVC روی این بخش می
+                    باشد.
+                </li>
+                <li>
+                    <span class="effective">View:</span>
+                    این بخش وظیفه نمایش نتیجه ی دو قسمت دیگر
+                    <span class="ltr">(Model & Controller)</span> را داد. درواقع این بخش، بخش انتهایی و نهایی برنامه می باشد که خروجی را به
+                    کاربر نمایش می دهد.
+                </li>
+            </ul>
+        </div>
+
+        <div class="step" data-x="2000" data-z="1000" data-rotate-y="-45">
+
+            <div class="center">
+                <img src="MVC-Process.png" />
+            </div>
+
+        </div>
+
+        <div class="step" data-x="2500" data-z="1500" data-rotate-y="-90">
+            <span>
+                فریم ورک های بسیاری در زبان های مختلف بر اساس معماری MVC نوشته شده اند که از جمله آنان می توان به فریم ورک Laravel برای PHP
+                اشاره کرد.
+            </span>
+        </div>
+
+        <div class="step" data-x="3500" data-z="2500" data-rotate-y="-135">
+            <h1 class="head">
+                مزایای معماری MVC
+            </h1>
+            <ul>
+                <li>
+                    <span class="effective">بیشتر شدن سرعت گسترش و توسعه برنامه: </span>
+                    معماری MVC این امکان را به تیم برنامه توسعه دهنده می دهد ا چند برنامه نویس همزمان روی یک پروژه کار کنند. بطور مثال زمانی
+                    که یکی از برنامه نویسان در حال کار برروی View می باشد برنامه نویس دیگر می تواند بخش Controller یا بخش
+                    های دیگر را توسعه دهد.
+                </li>
+                <li>
+                    <span class="effective">سرعت بالا و نظم کد بیشتر</span>
+                </li>
+                <li>
+                    <span class="effective">توسعه پذیری راحت تر و بهتر: </span>
+                    طراحی MVC این قدرت را به برنامه نویسان می دهد تا هر زمان با توجه به نیاز جدید، برنامه خود را با کمترین هزینه و زمان توسعه
+                    دهند.
+                </li>
+            </ul>
+        </div>
+
     </div>
+    <!-- Scripts -->
 
-    <div class="step" data-x="2500" data-z="1500" data-rotate-y="-90">
-        <span>
-            فریم ورک های بسیاری در زبان های مختلف بر اساس معماری MVC نوشته شده اند که از جمله آنان می توان به فریم ورک Laravel برای PHP اشاره کرد.
-        </span>
-    </div>
+    <script src="../../assets/js/individuals/S1/E1/script.js"></script>
 
-    <div class="step" data-x="3500" data-z="2500" data-rotate-y="-135">
-        <h1 class="head">
-            مزایای معماری MVC
-        </h1>
-        <ul>
-            <li>
-                <span class="effective">بیشتر شدن سرعت گسترش و توسعه برنامه: </span>
-                معماری MVC این امکان را به تیم برنامه توسعه دهنده می دهد ا چند برنامه نویس همزمان روی یک پروژه کار کنند.
-                بطور مثال زمانی که یکی از برنامه نویسان در حال کار برروی View می باشد برنامه نویس دیگر می تواند بخش Controller
-                 یا بخش های دیگر را توسعه دهد.
-            </li>
-            <li>
-                <span class="effective">سرعت بالا و نظم کد بیشتر</span>
-            </li>
-            <li>
-                <span class="effective">توسعه پذیری راحت تر و بهتر: </span>
-                طراحی MVC این قدرت را به برنامه نویسان می دهد تا هر زمان با توجه به نیاز جدید، برنامه خود را
-                با کمترین هزینه و زمان توسعه دهند.
-            </li>
-        </ul>
-    </div>
-
-</div>
-<!-- Scripts -->
-
-<script src="../../assets/js/individuals/S1/E1/script.js"></script>
-
-<script src="../../assets/js/plugins/impress.js"></script>
+    <script src="../../assets/js/plugins/impress.js"></script>
 
 </body>
+
 </html>

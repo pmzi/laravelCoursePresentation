@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- CSS -->
+
+    <link href="../../assets/css/individuals/parent.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- Let's Roll! -->
+    <div id="root">
+        <div id="intro" class="step first">
+            <h1 class="center big">
+                بررسی namespace ها در PHP
+            </h1>
+            <div class="center">
+                <span class="effective">مدرس: </span>
+                <span>پویا مظفرمقام</span>
+            </div>
+            <div class="center">
+                <span class="effective">Otedia.com</span>
+            </div>
+        </div>
+
+        <div class="step" id="defenition" data-y="1000">
+            <p class="head">
+                <span class="effective">
+                    مفهوم:
+                </span>
+                <span>
+                    namespace ها نقش scope برای برای توابع و کلاس‌ها را دارند و به ما اجازه می‌دهند تا در یه پروژه از چندین
+                    کلاس یا تابع با اسم یکسان استفاده کنیم.
+                </span>
+            </p>
+        </div>
+        <div class="step" id="example1" data-x="1500" data-rotate-y="-45">
+            <div class="ltrBlock important">Conflict</div>
+            <code>
+function output(){
+    echo "Rendered HTML!";
+}
+
+function output(){
+    echo "RSS";
+}
+            </code>
+            <div class="effective ltrBlock">
+                Without Conflict
+            </div>
+            <code>
+
+namespace HTML;
+
+function output(){
+    echo "Rendered HTML!";
+}
+
+namsepace RSS;
+
+function output(){
+    echo "RSS";
+}
+
+\Rss\output();// RSS
+
+\HTML\output();// Rendered HTML!
+            </code>
+
+        </div>
+
+        <div class="step" id="defenitionClass" data-y="2000">
+            <div class="effective ltrBlock">file1.php</div>
+            <code>
+namespace MyProject;
+
+public class Hey{
+    public function sayHello(){
+        echo "Hi";
+    }
+}
+            </code>
+            <div class="effective ltrBlock">
+                file2.php
+            </div>
+            <code>
+
+require('file1.php');
+
+$hey = \MyProject\Hey();
+
+$hey->sayHello();// Hi
+
+            </code>
+        </div>
+
+        <div class="step" id="example2" data-y="2000" data-x="3000" data-rotate-y="-45">
+            <div class="effective ltrBlock">file1.php</div>
+            <code>
+namespace MyProject;
+
+public class Hey{
+    public function sayHello(){
+        echo "Hi";
+    }
+}
+            </code>
+            <div class="effective ltrBlock">
+                file2.php
+            </div>
+            <code>
+
+require('file1.php');
+
+use \MyProject\Hey;
+
+$hey = new Hey();
+
+$hey->sayHello();// Hi
+
+            </code>
+        </div>
+    </div>
+    <!-- Scripts -->
+
+    <script src="../../assets/js/individuals/S1/E1/script.js"></script>
+
+    <script src="../../assets/js/plugins/impress.js"></script>
+
+</body>
+
+</html>
